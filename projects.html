@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Harsh Nath</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-title">Harsh Nath</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About me</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="static/my resume.pdf" class="resume-link" download>Download Resume</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="title">Projects</h1>
+
+    <div class="projects-section">
+
+      <!-- Project 4: AI Healthcare Chatbot (In Progress) -->
+<div class="box-link">
+  <div class="box">
+    <div class="project-img-container">
+      <img src="static/images/ai chatbot.webp" alt="AI Healthcare Chatbot Project" class="project-img">
+    </div>
+    <div class="project-content">
+      <h3>AI Healthcare Chatbot <span style="font-size: 14px; color: #ccc;">(In Progress)</span></h3>
+      <p>
+        <strong>Type:</strong> Full-stack Development with NLP & AI<br>
+        <strong>Technologies:</strong> Python, Flask, Natural Language Processing (NLP), MySQL<br>
+        <strong>Description:</strong> A chatbot system designed to assist users with healthcare-related queries. It aims to simulate doctor-patient interactions using AI and NLP for personalized, responsive conversations.<br>
+      </p>
+    </div>
+  </div>
+</div>
+
+      <!-- Project 1: Kidney Disease Detection -->
+      <a href="https://your-live-link-kidneydetect.com" target="_blank" class="box-link">
+        <div class="box">
+          <div class="project-img-container">
+            <img src="static/images/kidney disease.jpg" alt="Kidney Project" class="project-img">
+          </div>
+          <div class="project-content">
+            <h3>Kidney Disease Detection System</h3>
+            <p>
+              <strong>Type:</strong> Full-stack Development with Deep Learning<br>
+              <strong>Technologies:</strong> Python, Flask, SQLite, Deep Learning<br>
+              <strong>Description:</strong> A deep learning-based model to detect kidney diseases using CT scan images. It allows users to upload images and view prediction results.<br>
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2: Mobile Price Prediction -->
+      <a href="https://your-live-link-mobileprice.com" target="_blank" class="box-link">
+        <div class="box">
+          <div class="project-img-container">
+            <img src="static/images/mobile price.jpg" alt="Mobile Price Project" class="project-img">
+          </div>
+          <div class="project-content">
+            <h3>Mobile Price Prediction Platform</h3>
+            <p>
+              <strong>Type:</strong> Full-stack Development with Machine Learning<br>
+              <strong>Technologies:</strong> Python, Flask, SQLite, Machine Learning<br>
+              <strong>Description:</strong> A platform for predicting mobile phone prices using machine learning algorithms and providing a user-friendly interface.<br>
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3: Job Interview Clone -->
+      <a href="https://your-live-link-jobinterview.com" target="_blank" class="box-link">
+        <div class="box">
+          <div class="project-img-container">
+            <img src="static/images/job interview.jpg" alt="Job Interview Project" class="project-img">
+          </div>
+          <div class="project-content">
+            <h3>Job Interview Preparation Platform</h3>
+            <p>
+              <strong>Type:</strong> Frontend Development<br>
+              <strong>Technologies:</strong> HTML, CSS, JavaScript<br>
+              <strong>Description:</strong> A UI clone of a job interview preparation website. Built to practice frontend design and layout implementation.<br>
+            </p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <style>
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      color: #fff;
+    }
+
+    .title {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #00c6ff;
+      text-align: center;
+    }
+
+    .projects-section {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .box-link {
+      text-decoration: none;
+      color: white;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-left: 4px solid #00c6ff;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    .project-img-container {
+      position: relative;
+      width: 320px;
+      height: 180px;
+      overflow: hidden;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures image fits in the container */
+      object-position: center;
+      border-radius: 8px;
+    }
+
+    .project-content {
+      flex: 1;
+    }
+
+    .project-content h3 {
+      margin-top: 0;
+      color: #00c6ff;
+    }
+
+    .project-content p {
+      margin: 10px 0 0;
+    }
+
+    @media (max-width: 768px) {
+      .box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .project-img-container {
+        width: 100%;
+        height: 200px;
+        margin: 0 0 15px 0;
+      }
+
+      .project-img {
+        height: 100%;
+      }
+
+      .project-content {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <footer>
+    &copy; 2025 Harsh Nath. All rights reserved.
+  </footer>
+
+</body>
+</html>

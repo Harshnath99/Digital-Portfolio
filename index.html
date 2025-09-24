@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harsh Nath | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-title">Harsh Nath</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About me</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="static/my resume.pdf" class="resume-link" download>Download Resume</a>
+    </div>
+  </nav>
+
+  <div class="container fade-in">
+    <div class="hero-section">
+
+      <!-- Floating Tech Icons -->
+      <div class="floating-icons">
+        <!-- HTML -->
+        <img src="static/images/html.png" class="icon html1">
+        <!-- <img src="static/images/html.png" class="icon html2"> -->
+
+        <!-- CSS -->
+        <img src="static/images/css.png" class="icon css1">
+        <img src="static/images/css.png" class="icon css2">
+
+        
+
+        <!-- React -->
+        <img src="static/images/react.png" class="icon react1">
+        <img src="static/images/react.png" class="icon react2">
+
+        <!-- Python -->
+        <img src="static/images/python.png" class="icon python1">
+        <img src="static/images/python.png" class="icon python2">
+
+        <!-- C -->
+        <!-- <img src="static/images/c.png" class="icon c1"> -->
+        <img src="static/images/c.png" class="icon c2">
+
+        <!-- C++ -->
+        <!-- <img src="static/images/cpp.png" class="icon cpp1"> -->
+        <img src="static/images/cpp.png" class="icon cpp2">
+      </div>
+
+      <!-- Left Side Text -->
+      <div class="hero-text">
+        <h1 class="greeting">Hello,</h1>
+        <h1 class="iam">I am <span class="name">Harsh</span></h1>
+        <p class="intro">
+          I’m passionate about technology and enjoy turning ideas into reality through learning.
+  Every challenge is an opportunity to discover something new.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/harsh-nath-7a84bb265" target="_blank">
+            <img src="static/images/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/Harshnath99" target="_blank">
+            <img src="static/images/github.png" alt="GitHub">
+          </a>
+          <a href="https://www.instagram.com/harsh_nath_99?igsh=ZGNsbmgwNmpsMGF5" target="_blank">
+            <img src="static/images/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/share/19zL3ax9dy/" target="_blank">
+            <img src="static/images/facebook.png" alt="Facebook">
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Side Developer Illustration -->
+      <div class="hero-image">
+        <img src="static/images/harsh5.png" alt="Developer illustration" class="anime-img">
+      </div>
+    </div>
+  </div>
+
+  <style>
+    body {
+      background: #0d0d0d;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .hero-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+      gap: 40px;
+      position: relative;
+    }
+
+    .hero-text {
+      flex: 1;
+      color: white;
+      min-width: 300px;
+    }
+
+    .greeting {
+      font-size: 70px;
+      color: #00ffcc;
+      margin: 0;
+      font-family: cursive;
+    }
+
+    .iam {
+      font-size: 80px;
+      color: white;
+      font-weight: 700;
+      margin: 10px 0;
+      
+    }
+
+    .name {
+      color: #00c6ff;
+      text-shadow: 0 0 10px #00c6ff88;
+      
+    }
+
+    .intro {
+      font-size: 20px;
+      color: #ccc;
+      margin-top: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      margin-top: 25px;
+      gap: 18px;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      filter: grayscale(50%);
+      transition: 0.3s;
+    }
+
+    .social-icons img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+    }
+
+    .anime-img {
+      width: 450px;
+      max-width: 100%;
+      animation: float 50s ease-in-out infinite;
+      position: relative;
+      right: -100px;
+    }
+
+    /* Floating Tech Icons */
+    .floating-icons .icon {
+    position: absolute;
+    width: 32px;
+    opacity: 0.25;
+    animation: floatIcon 8s infinite ease-in-out;
+    z-index: 0;
+  }
+
+   /* Widely spread out icons */
+  .icon.html1 { top: 5%; left: -20%; animation-delay: 9s; }
+  /* .icon.html2 { bottom: 8%; right: 5%; animation-delay: 1s; } */
+
+  .icon.css1 { top: 10%; right: -10%; animation-delay: 9s; }
+  .icon.css2 { bottom: 10%; left: 10%; animation-delay: 9s; }
+
+
+
+  .icon.react1 { top: 40%; right: -5%; animation-delay: 9s; }
+  .icon.react2 { bottom: 80%; left: 15%; animation-delay: 9s; }
+
+  .icon.python1 { top: 50%; left: -9%; animation-delay: 9s; }
+  .icon.python2 { bottom: 30%; right: -16%; animation-delay: 9s; }
+
+  .icon.c1 { top: 15%; left: 60%; animation-delay: 9s; }
+  .icon.c2 { bottom: 20%; right: 50%; animation-delay: 9s; }
+
+  /* .icon.cpp1 { top: 40%; right: 40%; animation-delay: 1s; } */
+  .icon.cpp2 { bottom: 90%; left: 45%; animation-delay: 9s; }
+
+
+    @keyframes floatIcon {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        text-align: center;
+      }
+
+      .greeting, .iam {
+        font-size: 35px;
+      }
+
+      .anime-img {
+        width: 300px;
+      }
+
+      .hero-image {
+        justify-content: center;
+      }
+    }
+  </style>
+
+  <footer>
+    &copy; 2025 Harsh Nath. All rights reserved.
+  </footer>
+
+</body>
+</html>
